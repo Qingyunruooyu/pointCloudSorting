@@ -28,7 +28,7 @@ bool point3D::operator >(point3D &a){
 }
 
 bool point3D::operator ==(point3D &a){
-	bool result = a.Z - Z > -tol && a.Z - Z < tol;
+	bool result = a.Z - Z >= -tol && a.Z - Z <= tol;
 	return (result);
 }
 
